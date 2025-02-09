@@ -6,6 +6,6 @@ target 'CDProject' do
   use_frameworks!
 
   # Pods for CDProject
-  pod 'SnapKit', '~> 5.6'
+  pod 'SnapKit'
 
 end

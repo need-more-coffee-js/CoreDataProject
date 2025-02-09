@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6951B7B0EAD8B5EC1D97C4FD /* Pods_CDProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B31DFA3BDFD03EBB09C3E89 /* Pods_CDProject.framework */; };
+		C7A6CA6E2D5957DE009538E3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A6CA6D2D5957DE009538E3 /* CoreDataStack.swift */; };
+		C7A6CA702D59584B009538E3 /* ArtistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A6CA6F2D59584B009538E3 /* ArtistListViewController.swift */; };
+		C7A6CA722D59586A009538E3 /* ArtistEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A6CA712D59586A009538E3 /* ArtistEditViewController.swift */; };
 		C7EC0F4D2D5953BF00D9AD86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC0F4C2D5953BF00D9AD86 /* AppDelegate.swift */; };
 		C7EC0F4F2D5953BF00D9AD86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC0F4E2D5953BF00D9AD86 /* SceneDelegate.swift */; };
 		C7EC0F512D5953BF00D9AD86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC0F502D5953BF00D9AD86 /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 		0F3E41E304C79D337CE13F53 /* Pods-CDProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDProject.release.xcconfig"; path = "Target Support Files/Pods-CDProject/Pods-CDProject.release.xcconfig"; sourceTree = "<group>"; };
 		2D40AA15C72E848595DB8CE1 /* Pods-CDProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDProject.debug.xcconfig"; path = "Target Support Files/Pods-CDProject/Pods-CDProject.debug.xcconfig"; sourceTree = "<group>"; };
 		6B31DFA3BDFD03EBB09C3E89 /* Pods_CDProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A6CA6D2D5957DE009538E3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C7A6CA6F2D59584B009538E3 /* ArtistListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListViewController.swift; sourceTree = "<group>"; };
+		C7A6CA712D59586A009538E3 /* ArtistEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistEditViewController.swift; sourceTree = "<group>"; };
 		C7EC0F492D5953BF00D9AD86 /* CDProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EC0F4C2D5953BF00D9AD86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7EC0F4E2D5953BF00D9AD86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +54,6 @@
 				2D40AA15C72E848595DB8CE1 /* Pods-CDProject.debug.xcconfig */,
 				0F3E41E304C79D337CE13F53 /* Pods-CDProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,6 +85,9 @@
 				C7EC0F5A2D5953C100D9AD86 /* LaunchScreen.storyboard */,
 				C7EC0F5D2D5953C100D9AD86 /* Info.plist */,
 				C7EC0F552D5953BF00D9AD86 /* CDProject.xcdatamodeld */,
+				C7A6CA6D2D5957DE009538E3 /* CoreDataStack.swift */,
+				C7A6CA6F2D59584B009538E3 /* ArtistListViewController.swift */,
+				C7A6CA712D59586A009538E3 /* ArtistEditViewController.swift */,
 			);
 			path = CDProject;
 			sourceTree = "<group>";
@@ -206,10 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7A6CA6E2D5957DE009538E3 /* CoreDataStack.swift in Sources */,
 				C7EC0F572D5953BF00D9AD86 /* CDProject.xcdatamodeld in Sources */,
+				C7A6CA722D59586A009538E3 /* ArtistEditViewController.swift in Sources */,
 				C7EC0F512D5953BF00D9AD86 /* ViewController.swift in Sources */,
 				C7EC0F4D2D5953BF00D9AD86 /* AppDelegate.swift in Sources */,
 				C7EC0F4F2D5953BF00D9AD86 /* SceneDelegate.swift in Sources */,
+				C7A6CA702D59584B009538E3 /* ArtistListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +365,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CDProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -381,6 +393,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CDProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
