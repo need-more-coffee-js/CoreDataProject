@@ -1,19 +1,13 @@
-//
-//  ViewController.swift
-//  CDProject
-//
-//  Created by Денис Ефименков on 10.02.2025.
-//
 
 import UIKit
 
-class ViewController: UIViewController {
+class NavC: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
+
+        // Устанавливаем RootViewController как корневой контроллер
+        let rootVC = RootViewController()
+        self.viewControllers = [rootVC] // Устанавливаем массив контроллеров
     }
-
-
 }
-

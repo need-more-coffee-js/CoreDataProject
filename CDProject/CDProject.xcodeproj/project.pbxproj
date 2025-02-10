@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6951B7B0EAD8B5EC1D97C4FD /* Pods_CDProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B31DFA3BDFD03EBB09C3E89 /* Pods_CDProject.framework */; };
-		C7A6CA6E2D5957DE009538E3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A6CA6D2D5957DE009538E3 /* CoreDataStack.swift */; };
-		C7A6CA702D59584B009538E3 /* ArtistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A6CA6F2D59584B009538E3 /* ArtistListViewController.swift */; };
-		C7A6CA722D59586A009538E3 /* ArtistEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A6CA712D59586A009538E3 /* ArtistEditViewController.swift */; };
+		C7BC12872D5A53480072AE54 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BC12862D5A53480072AE54 /* RootViewController.swift */; };
+		C7BC128A2D5A55EC0072AE54 /* Artist+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BC12882D5A55EC0072AE54 /* Artist+CoreDataClass.swift */; };
+		C7BC128B2D5A55EC0072AE54 /* Artist+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BC12892D5A55EC0072AE54 /* Artist+CoreDataProperties.swift */; };
+		C7BC128D2D5A58A20072AE54 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BC128C2D5A58A20072AE54 /* EditViewController.swift */; };
 		C7EC0F4D2D5953BF00D9AD86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC0F4C2D5953BF00D9AD86 /* AppDelegate.swift */; };
 		C7EC0F4F2D5953BF00D9AD86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC0F4E2D5953BF00D9AD86 /* SceneDelegate.swift */; };
 		C7EC0F512D5953BF00D9AD86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC0F502D5953BF00D9AD86 /* ViewController.swift */; };
@@ -23,9 +24,10 @@
 		0F3E41E304C79D337CE13F53 /* Pods-CDProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDProject.release.xcconfig"; path = "Target Support Files/Pods-CDProject/Pods-CDProject.release.xcconfig"; sourceTree = "<group>"; };
 		2D40AA15C72E848595DB8CE1 /* Pods-CDProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDProject.debug.xcconfig"; path = "Target Support Files/Pods-CDProject/Pods-CDProject.debug.xcconfig"; sourceTree = "<group>"; };
 		6B31DFA3BDFD03EBB09C3E89 /* Pods_CDProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7A6CA6D2D5957DE009538E3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		C7A6CA6F2D59584B009538E3 /* ArtistListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListViewController.swift; sourceTree = "<group>"; };
-		C7A6CA712D59586A009538E3 /* ArtistEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistEditViewController.swift; sourceTree = "<group>"; };
+		C7BC12862D5A53480072AE54 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		C7BC12882D5A55EC0072AE54 /* Artist+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Artist+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C7BC12892D5A55EC0072AE54 /* Artist+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Artist+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C7BC128C2D5A58A20072AE54 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		C7EC0F492D5953BF00D9AD86 /* CDProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EC0F4C2D5953BF00D9AD86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7EC0F4E2D5953BF00D9AD86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C7BC126B2D5A11C20072AE54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7BC12882D5A55EC0072AE54 /* Artist+CoreDataClass.swift */,
+				C7BC12892D5A55EC0072AE54 /* Artist+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C7EC0F402D5953BF00D9AD86 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +89,7 @@
 		C7EC0F4B2D5953BF00D9AD86 /* CDProject */ = {
 			isa = PBXGroup;
 			children = (
+				C7BC126B2D5A11C20072AE54 /* Model */,
 				C7EC0F4C2D5953BF00D9AD86 /* AppDelegate.swift */,
 				C7EC0F4E2D5953BF00D9AD86 /* SceneDelegate.swift */,
 				C7EC0F502D5953BF00D9AD86 /* ViewController.swift */,
@@ -85,9 +97,8 @@
 				C7EC0F5A2D5953C100D9AD86 /* LaunchScreen.storyboard */,
 				C7EC0F5D2D5953C100D9AD86 /* Info.plist */,
 				C7EC0F552D5953BF00D9AD86 /* CDProject.xcdatamodeld */,
-				C7A6CA6D2D5957DE009538E3 /* CoreDataStack.swift */,
-				C7A6CA6F2D59584B009538E3 /* ArtistListViewController.swift */,
-				C7A6CA712D59586A009538E3 /* ArtistEditViewController.swift */,
+				C7BC12862D5A53480072AE54 /* RootViewController.swift */,
+				C7BC128C2D5A58A20072AE54 /* EditViewController.swift */,
 			);
 			path = CDProject;
 			sourceTree = "<group>";
@@ -214,13 +225,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7A6CA6E2D5957DE009538E3 /* CoreDataStack.swift in Sources */,
+				C7BC128D2D5A58A20072AE54 /* EditViewController.swift in Sources */,
 				C7EC0F572D5953BF00D9AD86 /* CDProject.xcdatamodeld in Sources */,
-				C7A6CA722D59586A009538E3 /* ArtistEditViewController.swift in Sources */,
 				C7EC0F512D5953BF00D9AD86 /* ViewController.swift in Sources */,
+				C7BC12872D5A53480072AE54 /* RootViewController.swift in Sources */,
 				C7EC0F4D2D5953BF00D9AD86 /* AppDelegate.swift in Sources */,
+				C7BC128A2D5A55EC0072AE54 /* Artist+CoreDataClass.swift in Sources */,
+				C7BC128B2D5A55EC0072AE54 /* Artist+CoreDataProperties.swift in Sources */,
 				C7EC0F4F2D5953BF00D9AD86 /* SceneDelegate.swift in Sources */,
-				C7A6CA702D59584B009538E3 /* ArtistListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
